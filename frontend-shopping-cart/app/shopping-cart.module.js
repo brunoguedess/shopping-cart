@@ -2,12 +2,14 @@
 (function () {
     'use strict';
 
-    angular.module('shopping-cart', []).config(shoppingCartConfig);
+    angular.module('shopping-cart', [
+        'ngAnimate',
+        'toastr'
+    ]).config(shoppingCartConfig);
 
     shoppingCartConfig.$inject = ['$httpProvider'];
 
     function shoppingCartConfig($httpProvider) {
-        console.log($httpProvider);
         // $httpProvider.interceptors.push('authInterceptorService');
     }
 })();
