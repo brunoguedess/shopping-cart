@@ -2,7 +2,7 @@
 (function () {
     'use strict';
 
-    angular.module('shopping-cart').controller('AuthController', AuthController);
+    angular.module('meat-app').controller('AuthController', AuthController);
 
     AuthController.$inject = [
         'toastr',

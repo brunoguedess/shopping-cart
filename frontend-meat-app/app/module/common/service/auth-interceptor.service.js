@@ -2,19 +2,19 @@
 (function () {
     'use strict';
 
-    angular.module('shopping-cart').factory('authInterceptorService', authInterceptorService);
+    angular.module('meat-app').factory('authInterceptorService', authInterceptorService);
 
     authInterceptorService.$inject = [
         '$q',
         '$injector',
-        'shoppingCartConfig',
+        'meatAppConfig',
         'locationService'
     ];
 
     function authInterceptorService(
         $q,
         $injector,
-        shoppingCartConfig,
+        meatAppConfig,
         locationService
     ) {
         return {
@@ -25,10 +25,10 @@
 
         function request(req) {
             const userSessionService = $injector.get('userSessionService');
-            const isAuthPage = locationService.containsPage(shoppingCartConfig.authPage);
+            const isAuthPage = locationService.containsPage(meatAppConfig.authPage);
 
             if (!userSessionService.hasUser() && !isAuthPage) {
-                locationService.changeUrl(shoppingCartConfig.authPage);
+                locationService.changeUrl(meatAppConfig.authPage);
 
                 return null;
             }
@@ -46,7 +46,7 @@
 
                 userSessionService.removeUser();
 
-                locationService.changeUrl(shoppingCartConfig.authPage);
+                locationService.changeUrl(meatAppConfig.authPage);
             }
 
             return $q.reject(res);

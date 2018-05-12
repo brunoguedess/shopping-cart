@@ -1,6 +1,6 @@
 // eslint-disable-next-line func-names
 (function () {
-    angular.module('shopping-cart').component('loginField', {
+    angular.module('meat-app').component('loginField', {
         bindings: {
             id: '@',
             type: '@',

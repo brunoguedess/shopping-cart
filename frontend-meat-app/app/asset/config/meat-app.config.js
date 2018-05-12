@@ -2,7 +2,7 @@
 (function () {
     'use strict';
 
-    angular.module('shopping-cart').constant('shoppingCartConfig', {
+    angular.module('meat-app').constant('meatAppConfig', {
         backendUrl: 'http://localhost:3003',
         itemsPerPage: 5,
         authPage: '/auth.html'

@@ -2,18 +2,18 @@
 (function () {
     'use strict';
 
-    angular.module('shopping-cart').factory('authService', authService);
+    angular.module('meat-app').factory('authService', authService);
 
     authService.$inject = [
         '$http',
-        'shoppingCartConfig'
+        'meatAppConfig'
     ];
 
     function authService(
         $http,
-        shoppingCartConfig
+        meatAppConfig
     ) {
-        const authApiUrl = `${shoppingCartConfig.backendUrl}/oapi`;
+        const authApiUrl = `${meatAppConfig.backendUrl}/oapi`;
 
         return {
             login,

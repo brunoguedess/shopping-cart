@@ -2,7 +2,7 @@
 (function () {
     'use strict';
 
-    angular.module('shopping-cart').factory('userSessionService', userSessionService);
+    angular.module('meat-app').factory('userSessionService', userSessionService);
 
     userSessionService.$inject = [
         '$http',

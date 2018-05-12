@@ -2,7 +2,7 @@
 (function () {
     'use strict';
 
-    angular.module('shopping-cart').factory('locationService', locationService);
+    angular.module('meat-app').factory('locationService', locationService);
 
     locationService.$inject = ['$window'];
 

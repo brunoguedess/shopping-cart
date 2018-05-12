@@ -2,14 +2,14 @@
 (function () {
     'use strict';
 
-    angular.module('shopping-cart', [
+    angular.module('meat-app', [
         'ngAnimate',
         'toastr'
-    ]).config(shoppingCartConfig);
+    ]).config(meatAppConfig);
 
-    shoppingCartConfig.$inject = ['$httpProvider'];
+    meatAppConfig.$inject = ['$httpProvider'];
 
-    function shoppingCartConfig($httpProvider) {
+    function meatAppConfig($httpProvider) {
         // $httpProvider.interceptors.push('authInterceptorService');
     }
 })();
