@@ -1,5 +1,30 @@
-<div ng-repeat="restaurant in vm.restaurants"> 
-    <meat-restaurant></meat-restaurant>
-</div>
+<section class="content-header">
+    <h1>
+        Todos os Restaurantes
+        <a href="#" class="search-link pull-right">
+            <span>
+                <small></small>
+            </span>
+            <i class="fa fa-search"></i>
+        </a>
+    </h1>
 
+    <!-- barra de busca-->
+    <div class="row">
+        <div class="col-xs-12 search-bar">
+            <form>
+                <div class="form-group">
+                    <input type="text" formControlName="searchControl" class="form-control" placeholder="O que você está procurando?">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
 
+<section class="content">
+    <div class="row">
+        <div ng-repeat="restaurant in vm.restaurants" class="col-sm-6 col-xs-12">
+            <meat-restaurant restaurant='restaurant'></meat-restaurant>
+        </div>
+    </div>
+</section>
