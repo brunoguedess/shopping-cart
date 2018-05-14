@@ -16,13 +16,13 @@
 
 <body>
     <div>
-        <header ng-include="'/template/header.html'"></header>
+        <meat-header></meat-header>
 
         <main role="main" class="container-fluid" ui-view="">
             <div ui-view="cart-layout"></div>
         </main>
 
-        <footer ng-include="'/template/footer.html'"></footer>
+        <meat-footer></meat-footer>
     </div>
     
     <script src="/asset/js/deps.min.js"></script>

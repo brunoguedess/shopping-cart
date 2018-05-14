@@ -1,0 +1,35 @@
+/* Header */
+
+.headerTitle {
+    padding: 30px;
+    text-align: center;
+    /*
+    background-image: url("../images/digital-tablet.jpg");
+    background-size: 100%;
+    */
+    background: black;
+    color: white;
+    height: 140px;
+}
+
+.fa-shopping-cart:before {
+    font-size:24px;
+}
+
+.fa-home:before {
+    font-size:24px;
+}
+
+.fa-user-circle-o {
+    font-size:24px;
+}
+
+.dropdown-menu {
+    width: 250px;
+}
+
+.user-header {
+    padding: 5%;
+    height: 120px;
+    text-align: center;
+}
