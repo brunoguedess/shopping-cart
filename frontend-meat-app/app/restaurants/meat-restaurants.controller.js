@@ -8,13 +8,13 @@
     function MeatRestaurantsController(meatRestaurantsService) {
         const vm = this;
 
+        vm.showInputSearch = false;
         vm.getRestaurants = getRestaurants;
+        vm.toggleSearch = toggleSearch;
 
         activate();
 
         function activate() {
-            console.log('activate meat restaurantes controller...');
-
             getRestaurants();
         }
 
@@ -30,6 +30,10 @@
             function errorGetRestaurants(response) {
                 console.log(response);
             }
+        }
+
+        function toggleSearch() {
+            vm.showInputSearch = !vm.showInputSearch;
         }
     }
 })();

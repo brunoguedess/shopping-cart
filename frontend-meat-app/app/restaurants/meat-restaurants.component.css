@@ -10,6 +10,7 @@
 }
 
 .search-bar {
-    opacity: 0;
-    max-height: 0px;
+    opacity: 1;
+    max-height: 70px;
+    margin-top: 20px;
 }
