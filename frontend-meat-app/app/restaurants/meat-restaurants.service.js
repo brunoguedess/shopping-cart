@@ -1,4 +1,5 @@
-(function(){
+// eslint-disable-next-line func-names
+(function () {
     'use strict';
 
     angular.module('meat-app').factory('meatRestaurantsService', meatRestaurantsService);
@@ -6,12 +7,14 @@
     meatRestaurantsService.$inject = ['$http'];
 
     function meatRestaurantsService($http) {
+        const backendUrl = 'http://localhost:3000';
+
         return {
             getRestaurants
         };
 
-        function getRestaurants() {
-            return $http.get('http://localhost:3000/restaurants');
+        function getRestaurants(search = '') {
+            return $http.get(`${backendUrl}/restaurants?q=${search}`);
         }
     }
 })();

@@ -1,3 +1,4 @@
+// eslint-disable-next-line func-names
 (function () {
     'use strict';
 
@@ -19,7 +20,7 @@
         }
 
         function getRestaurants() {
-            meatRestaurantsService.getRestaurants()
+            meatRestaurantsService.getRestaurants(vm.search)
                 .then(successGetRestaurants)
                 .catch(errorGetRestaurants);
 
