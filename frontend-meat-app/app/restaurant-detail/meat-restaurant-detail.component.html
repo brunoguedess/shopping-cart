@@ -1,0 +1,36 @@
+<section class="content-header">
+    <h1></h1>
+</section>
+
+<section class="content-detail">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box box-solid">
+                <div class="box-header with-border">
+                    <p class="box-title">
+                        <i class="fa fa-home"></i> {{vm.restaurant.name}}
+                    </p>
+                    <p class="pull-right">
+                        <i class="fa fa-star"></i> {{vm.restaurant.rating}}
+                    </p>
+                </div>
+
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <div class="col-sm-3 col-xs-12">
+                        <img class="box-img-detail" src="{{vm.restaurant.imagePath}}" />
+                    </div>
+
+                    <dl class="col-sm-9 col-xs-12">
+                        <dt>Categoria</dt>
+                        <dd>{{vm.restaurant.category}}</dd>
+                        <dt>Quem somos</dt>
+                        <dd>{{vm.restaurant.about}}</dd>
+                        <dt>Horários</dt>
+                        <dd>{{vm.restaurant.hours}}</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
