@@ -1,1 +1,13 @@
-<div>menu item</div>
+<div class="menu-item-info-box">
+    <span class="menu-item-info-box-icon">
+        <img src="{{$ctrl.menuItem.imagePath}}">
+    </span>
+
+    <div class="menu-item-info-box-content">
+        <span class="menu-item-info-box-text">{{$ctrl.menuItem.name}}</span>
+        <span class="menu-item-info-box-detail">{{$ctrl.menuItem.description}}</span>
+        <span class="menu-item-info-box-price">{{$ctrl.menuItem.price}}</span>
+        <a ng-click="addItem()">
+            <i class="fa fa-plus-circle"></i> Adicionar</a>
+    </div>
+</div>

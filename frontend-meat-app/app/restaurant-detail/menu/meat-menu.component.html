@@ -1,6 +1,9 @@
-<div class="col-md-9 col-xs-12">
-    <div>menu</div>
+<div ng-repeat="menuItem in vm.menu">
+    <div class="col-md-9 col-xs-12">
+        <meat-menu-item menu-item='menuItem'></meat-menu-item>
+    </div>
 </div>
+
 <div class="col-md-3 col-xs-12">
     <div>shopping cart</div>
 </div>

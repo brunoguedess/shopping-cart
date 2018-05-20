@@ -13,8 +13,8 @@
             getMenu
         };
 
-        function getMenu() {
-            return $http.get(`${backendUrl}/menu`);
+        function getMenu(search = '') {
+            return $http.get(`${backendUrl}/menu?q=${search}`);
         }
     }
 })();

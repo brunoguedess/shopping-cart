@@ -4,9 +4,15 @@
 
     angular.module('meat-app').controller('MeatMenuController', MeatMenuController);
 
-    MeatMenuController.$inject = ['meatMenuService'];
+    MeatMenuController.$inject = [
+        'meatMenuService',
+        '$stateParams'
+    ];
 
-    function MeatMenuController(meatMenuService) {
+    function MeatMenuController(
+        meatMenuService,
+        $stateParams
+    ) {
         const vm = this;
 
         vm.getMenu = getMenu;
@@ -18,7 +24,7 @@
         }
 
         function getMenu() {
-            meatMenuService.getMenu()
+            meatMenuService.getMenu($stateParams.restaurantId)
                 .then(successGetMenu)
                 .catch(errorGetMenu);
 
