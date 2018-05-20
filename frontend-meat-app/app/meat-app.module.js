@@ -28,24 +28,17 @@
                 component: 'meatRestaurants'
             })
             .state('restaurant-detail', {
+                abstract: true,
                 url: '/restaurants/:restaurantId',
                 component: 'meatRestaurantDetail'
-                /*,
-                resolve: {
-                    restaurant() {
-                        return meatRestaurantsService.getRestaurants($stateParams.restaurantId)
-                            .then(successGetRestaurants)
-                            .catch(errorGetRestaurantes);
-
-                        function successGetRestaurants(response) {
-                            console.log(response);
-                        }
-
-                        function errorGetRestaurantes(response) {
-                            console.log(response);
-                        }
-                    }
-                } */
+            })
+            .state('restaurant-detail.menu', {
+                url: '',
+                component: 'meatMenu'
+            })
+            .state('restaurant-detail.reviews', {
+                url: '',
+                component: 'meatReviews'
             });
     }
 })();
