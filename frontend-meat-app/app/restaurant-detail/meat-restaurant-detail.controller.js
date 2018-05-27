@@ -27,7 +27,7 @@
                 .catch(errorGetRestaurantes);
 
             function successGetRestaurants(response) {
-                vm.restaurant = response.data[0];
+                [vm.restaurant] = response.data;
             }
 
             function errorGetRestaurantes(response) {
