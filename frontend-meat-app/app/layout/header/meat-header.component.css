@@ -1,7 +1,7 @@
 /* Header */
 
 .headerTitle {
-    padding: 30px;
+    padding: 0.5%;
     text-align: center;
     /*
     background-image: url("../images/digital-tablet.jpg");
@@ -9,7 +9,7 @@
     */
     background: black;
     color: white;
-    height: 140px;
+    height: 100px;
 }
 
 .fa-shopping-cart:before {

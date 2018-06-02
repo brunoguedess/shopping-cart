@@ -1,48 +1,4 @@
 /* Restaurant detail header */
 
-.box-header {
-    color: inherit;
-}
 
-.box-img-detail {
-    width: 180px;
-    height: 180px;
-}
-
-.content-detail {
-    background-color: #fff;
-}
-
-.box-title {
-    font-size: 14px;
-    display: inline-block;
-}
-
-.box-header {
-    color: #444;
-    display: block;
-    padding: 10px 0 0 10px;
-    position: relative;
-}
-
-.box-header.with-border {
-    border-bottom: 1px solid #f4f4f4;
-
-    right: 0px;
-    left: 10px;
-    padding-left: 0px;
-    width: 1120px;
-}
-
-.box-body {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    padding: 10px;
-}
-
-.box-body dl {
-    font-size: 18px;
-}
 

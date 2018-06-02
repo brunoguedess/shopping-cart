@@ -2,7 +2,8 @@
 (function () {
     angular.module('meat-app').component('meatMenuItem', {
         bindings: {
-            menuItem: '='
+            menuItem: '=',
+            onAddItem: '&'
         },
         templateUrl: './restaurant-detail/menu/menu-item/meat-menu-item.component.html'
     });

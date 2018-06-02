@@ -7,6 +7,8 @@ body {
     margin-bottom: 60px;
     background-color: #efefef;
     color: #555;
+    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 400;
 }
 
 .img-circle {
@@ -55,6 +57,10 @@ body {
     vertical-align: middle;
 }
 
+@font-face { font-family: "FontAwesome"; font-style: normal; font-weight: normal; src: url("fontawesome-webfont.674f50d287a8c48dc19b.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("fontawesome-webfont.af7ae505a9eed503f8b8.woff2") format("woff2"), url("fontawesome-webfont.fee66e712a8a08eef580.woff") format("woff"), url("fontawesome-webfont.b06871f281fee6b241d6.ttf") format("truetype"), url("fontawesome-webfont.912ec66d7572ff821749.svg#fontawesomeregular") format("svg"); }
+@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weight: 700; src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url("https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
 #formButton {
     background: black;   
 }
@@ -71,4 +77,81 @@ body {
 
 .formLogin form-control:focus {
     border-color: black;
+}
+
+/* BOX */
+
+.box-header {
+    color: inherit;
+}
+
+.box-img-detail {
+    width: 180px;
+    height: 180px;
+}
+
+.content-detail {
+    background-color: #fff;
+}
+
+.box-title {
+    font-size: 14px;
+    display: inline-block;
+}
+
+.box-header {
+    color: #444;
+    display: block;
+    padding: 10px 0 0 10px;
+    position: relative;
+}
+
+.box-header.with-border {
+    border-bottom: 1px solid #f4f4f4;
+
+    right: 0px;
+    left: 10px;
+    padding-left: 0px;
+    width: 1120px;
+}
+
+.box-body {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+}
+
+.box-body dl {
+    font-size: 18px;
+}
+
+.box.box-solid {
+    border-top: 0;
+}
+
+.box {
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    border-top: 3px solid #d2d6de;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.box-footer {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top: 1px solid #f4f4f4;
+    padding: 10px;
+    background-color: #fff;
+    height: 55px;
+}
+
+.danger {
+    color: #dd4b39;
 }

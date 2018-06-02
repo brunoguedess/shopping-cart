@@ -10,6 +10,9 @@
         const vm = this;
 
         vm.getShoppingCart = getShoppingCart;
+        vm.getShoppingCartTotal = getShoppingCartTotal;
+        vm.removeItem = removeItem;
+        vm.clearItems = clearItems;
 
         activate();
 
@@ -18,17 +21,21 @@
         }
 
         function getShoppingCart() {
-            meatShoppingCartService.getShoppingCart()
-                .then(successGetShoppingCart)
-                .catch(errorGetShoppingCart);
+            vm.shoppingCart = meatShoppingCartService.items();
+        }
 
-            function successGetShoppingCart(response) {
-                vm.shoppingCart = response.data;
-            }
+        function getShoppingCartTotal() {
+            return meatShoppingCartService.total();
+        }
 
-            function errorGetShoppingCart(response) {
-                console.log(response);
-            }
+        function removeItem(item) {
+            meatShoppingCartService.removeItem(item);
+        }
+
+        function clearItems() {
+            meatShoppingCartService.clear();
+
+            getShoppingCart();
         }
     }
 })();

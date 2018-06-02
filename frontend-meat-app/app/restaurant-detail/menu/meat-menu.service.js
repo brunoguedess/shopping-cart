@@ -7,7 +7,7 @@
     meatMenuService.$inject = ['$http'];
 
     function meatMenuService($http) {
-        const backendUrl = 'http://localhost:3000';
+        const backendUrl = 'http://localhost:3001';
 
         return {
             getMenu

@@ -6,16 +6,19 @@
 
     MeatMenuController.$inject = [
         'meatMenuService',
+        'meatShoppingCartService',
         '$stateParams'
     ];
 
     function MeatMenuController(
         meatMenuService,
+        meatShoppingCartService,
         $stateParams
     ) {
         const vm = this;
 
         vm.getMenu = getMenu;
+        vm.addItem = addItem;
 
         activate();
 
@@ -35,6 +38,10 @@
             function errorGetMenu(response) {
                 console.log(response);
             }
+        }
+
+        function addItem(item) {
+            meatShoppingCartService.addItem(item);
         }
     }
 })();
