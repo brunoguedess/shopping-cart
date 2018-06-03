@@ -57,9 +57,28 @@ body {
     vertical-align: middle;
 }
 
-@font-face { font-family: "FontAwesome"; font-style: normal; font-weight: normal; src: url("fontawesome-webfont.674f50d287a8c48dc19b.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("fontawesome-webfont.af7ae505a9eed503f8b8.woff2") format("woff2"), url("fontawesome-webfont.fee66e712a8a08eef580.woff") format("woff"), url("fontawesome-webfont.b06871f281fee6b241d6.ttf") format("truetype"), url("fontawesome-webfont.912ec66d7572ff821749.svg#fontawesomeregular") format("svg"); }
-@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-@font-face { font-family: "Source Sans Pro"; font-style: normal; font-weight: 700; src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url("https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { 
+    font-family: "FontAwesome"; 
+    font-style: normal; 
+    font-weight: normal; 
+    src: url("fontawesome-webfont.674f50d287a8c48dc19b.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("fontawesome-webfont.912ec66d7572ff821749.svg#fontawesomeregular") format("svg");
+}
+
+@font-face { 
+    font-family: "Source Sans Pro"; 
+    font-style: normal; 
+    font-weight: 400; 
+    src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2") format("woff2"); 
+    unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; 
+}
+
+@font-face { 
+    font-family: "Source Sans Pro"; 
+    font-style: normal; 
+    font-weight: 700; 
+    src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url("https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2") format("woff2"); 
+    unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; 
+}
 
 #formButton {
     background: black;   

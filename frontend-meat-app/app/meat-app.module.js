@@ -39,6 +39,14 @@
             .state('restaurant-detail.reviews', {
                 url: '',
                 component: 'meatReviews'
+            })
+            .state('order', {
+                url: '/order',
+                component: 'meatOrder'
+            })
+            .state('order-summary', {
+                url: '/order-summary',
+                component: 'meatOrderSummary'
             });
     }
 })();
