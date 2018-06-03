@@ -4,9 +4,15 @@
 
     angular.module('meat-app').controller('MeatReviewsController', MeatReviewsController);
 
-    MeatReviewsController.$inject = ['meatReviewsService'];
+    MeatReviewsController.$inject = [
+        'meatReviewsService',
+        '$stateParams'
+    ];
 
-    function MeatReviewsController(meatReviewsService) {
+    function MeatReviewsController(
+        meatReviewsService,
+        $stateParams
+    ) {
         const vm = this;
 
         vm.getReviews = getReviews;
@@ -18,15 +24,15 @@
         }
 
         function getReviews() {
-            meatReviewsService.getReviews()
-                .then(successGetReviews)
-                .catch(errorGetReviews);
+            meatReviewsService.reviews($stateParams.restaurantId)
+                .then(successReviews)
+                .catch(errorReviews);
 
-            function successGetReviews(response) {
+            function successReviews(response) {
                 vm.reviews = response.data;
             }
 
-            function errorGetReviews(response) {
+            function errorReviews(response) {
                 console.log(response);
             }
         }

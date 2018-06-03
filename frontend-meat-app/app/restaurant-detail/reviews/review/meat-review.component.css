@@ -1,1 +1,26 @@
 /* Review */
+
+.review-score {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.user-block .username {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.user-block .username, .user-block .description, .user-block .comment {
+    display: block;
+    margin-left: 50px;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.user-block img {
+    width: 40px;
+    height: 40px;
+    float: left;
+}

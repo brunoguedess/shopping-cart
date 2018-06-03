@@ -10,11 +10,11 @@
         const backendUrl = 'http://localhost:3001';
 
         return {
-            getReviews
+            reviews
         };
 
-        function getReviews() {
-            return $http.get(`${backendUrl}/reviews`);
+        function reviews(search = '') {
+            return $http.get(`${backendUrl}/reviews?q=${search}`);
         }
     }
 })();
