@@ -1,17 +1,33 @@
-<meat-customer></meat-customer>
-<meat-delivery-address></meat-delivery-address>
+<section class="content-header">
+</section>
 
-<meat-order-item></meat-order-item>
-<meat-order-item></meat-order-item>
-<meat-order-item></meat-order-item>
+<section class="content">
+    <section class="invoice">
+        <form class="orderForm" novalidate>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="page-header">
+                        <i class="fa fa-shopping-cart"></i> Finalize o seu pedido
+                    </h2>
+                </div>
+            </div>
 
-<meat-payment></meat-payment>
-<meat-order-total></meat-order-total>
+            <meat-customer></meat-customer>
+            <meat-delivery-address></meat-delivery-address>
+            <meat-order-item></meat-order-item>
 
-<div class="row">
-    <div class="col-xs-12">
-        <button ng-click="vm.checkOrder()" class="btn btn-success pull-right">
-            <i class="fa fa-credit-card"></i> Concluir Pedido
-        </button>
-    </div>
-</div>
+            <div class="row">
+                <meat-payment></meat-payment>
+                <meat-order-total></meat-order-total>
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <button class="btn btn-success pull-right">
+                    <i class="fa fa-credit-card"></i> Concluir Pedido
+                </button>
+            </div>
+        </div>
+    </section>
+</section>
